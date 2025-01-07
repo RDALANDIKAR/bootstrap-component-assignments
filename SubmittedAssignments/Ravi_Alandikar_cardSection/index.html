@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Dynamic Card Section</title>
+  <style>
+    .card-spacing {
+      margin: 1.5rem;
+      border: 2px solid black;
+      border-radius: 3px;
+      padding: 5px;
+    
+    }
+
+    .custom-button {
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+      color: #131212;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+
+    .custom-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body class="container">
+  <h2 class="text-center my-4">Card Section</h2>
+
+  <!-- Search Bar -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <input type="text" id="search-bar" class="form-control" placeholder="Search cards by title or subtitle...">
+    </div>
+  </div>
+
+  <!-- Card Section -->
+  <div id="card-section" class="row">
+    <!-- Cards will be dynamically generated here -->
+  </div>
+
+  <p id="no-results" class="text-center text-muted my-4" style="display: none;">
+    No results found.
+  </p>
+
+  <script src="Script.js"></script>
+</body>
+
+</html>

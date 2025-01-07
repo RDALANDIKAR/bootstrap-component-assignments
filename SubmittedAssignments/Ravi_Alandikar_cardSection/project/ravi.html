@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Card Section</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="card-section.js"></script>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 id="page-title">Welcome to Card Section</h1>
+            <h2 id="page-subtitle">Dynamic Card Component</h2>
+            <p id="page-description">Here you can view dynamically generated card components.</p>
+        </div>
+
+        <card-section 
+            config='{"cardContainerClass": "card my-3", "imageClass": "card-img-top custom-image-class", "buttonClass": "btn btn-outline-primary"}'
+            data='{"title": "Dynamic Card 1", "subTitle": "Subtitle 1", "description": "Description for Card 1", "image": "https://via.placeholder.com/150", "button": "Click Me!", "link": "https://www.example.com, Example"}'>
+        </card-section>
+
+        <card-section 
+            config='{"cardContainerClass": "card my-3", "imageClass": "card-img-top custom-image-class", "buttonClass": "btn btn-outline-secondary"}'
+            data='{"title": "Dynamic Card 2", "subTitle": "Subtitle 2", "description": "Description for Card 2", "image": "https://via.placeholder.com/150", "button": "Learn More", "link": "https://www.example.com, Example"}'>
+        </card-section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Card Component Example</title>
+</head>
+
+<body class="container">
+  <!-- Page Header -->
+  <header class="text-center my-4">
+    <h1>Main Page Title</h1>
+    <p class="lead">This is a subtitle for the page, providing an overview of the content below.</p>
+  </header>
+
+  <!-- Page Description -->
+  <section class="my-5">
+    <h2>Page Description</h2>
+    <p>
+      This page demonstrates the usage of a customizable card component. Below, you will find several examples of 
+      cards, each showcasing the ability to display various attributes such as titles, subtitles, descriptions, 
+      buttons, and links. You can customize these attributes using JSON data.
+    </p>
+  </section>
+
+  <!-- Example Usage of Card Component -->
+  <section class="my-5">
+    <h2>Card Section</h2>
+    <div class="row">
+      <div class="col-3">
+        <card-component data='{
+            "title": "Card 1",
+            "subTitle": "This is Card 1 subtitle",
+            "description": "Card 1 description goes here.",
+            "image": "https://via.placeholder.com/150",
+            "button": "Learn More",
+            "link": "https://example.com, Visit Example",
+            "showImage": "true",
+            "showTitle": "true",
+            "showSubTitle": "true",
+            "showDescription": "true",
+            "showButton": "true",
+            "showLink": "true"
+          }' config='{
+            "titleClass": "card-title",
+            "textClass": "card-text",
+            "buttonClass": "btn btn-primary",
+            "linkClass": "card-link"
+          }'></card-component>
+      </div>
+      <div class="col-3">
+        <card-component data='{
+            "title": "Card 2",
+            "subTitle": "This is Card 2 subtitle",
+            "description": "Card 2 description goes here.",
+            "image": "https://via.placeholder.com/150",
+            "button": "Read More",
+            "link": "https://example.com, More Info",
+            "showImage": "true",
+            "showTitle": "true",
+            "showSubTitle": "true",
+            "showDescription": "true",
+            "showButton": "true",
+            "showLink": "true"
+          }' config='{
+            "titleClass": "card-title",
+            "textClass": "card-text",
+            "buttonClass": "btn btn-success",
+            "linkClass": "card-link"
+          }'></card-component>
+      </div>
+      <div class="col-3">
+        <card-component data='{
+            "title": "Card 3",
+            "subTitle": "This is Card 3 subtitle",
+            "description": "Card 3 description goes here.",
+            "image": "https://via.placeholder.com/150",
+            "button": "Explore",
+            "link": "https://example.com, Explore Now",
+            "showImage": "true",
+            "showTitle": "true",
+            "showSubTitle": "true",
+            "showDescription": "true",
+            "showButton": "true",
+            "showLink": "true"
+          }' config='{
+            "titleClass": "card-title",
+            "textClass": "card-text",
+            "buttonClass": "btn btn-warning",
+            "linkClass": "card-link"
+          }'></card-component>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center my-5">
+    <p>&copy; 2025 Card Component Demo. All rights reserved.</p>
+  </footer>
+
+  <!-- Include the JavaScript file -->
+  <script src="./blogscript.js"></script>
+</body>
+
+</html>
